@@ -1,0 +1,25 @@
+<header class="fixed-top">
+              <nav class="navbar " >
+                    <ul class="links">
+                        <li><a  routerLink="/home"> Home</a></li>
+                        <li ><a  routerLink="/eventsandacts">  Events & Activities</a></li>
+                        <li><img src="assets/img1.png" alt="Logo" class="logo"> </li>
+                        <li ><a routerLink="/contact" > Contact</a></li> 
+                        <li ><a routerLink="/aboutus">  About Us</a></li> 
+                    </ul>
+                    <img src="assets/img2.png" class="minimenu">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..">
+                        <button><i class="fas fa-search"></i></button>
+                      </div>
+                </nav>
+
+</header>
+<script>
+    const minim = document.querySelector(".minimenu")
+    const navLinks = document.querySelector(".links")
+
+    minim.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>

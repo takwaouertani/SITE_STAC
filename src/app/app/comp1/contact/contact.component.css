@@ -1,0 +1,45 @@
+.img1{
+    background-image: url("src\assets\img7.jpeg");
+    background-size: cover;
+    height: 750px;
+    background-position: center;
+    top: 802px;
+    left: 0;
+    
+}
+h1{
+    position: absolute;
+  top: 430%;
+  left: 45%;
+  color: aliceblue;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+
+}
+button {
+    color: rgb(34, 34, 34);
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    margin: 10px; /* Add margin to create space between buttons */
+}
+
+.d1 {
+    position: absolute;
+    top: 150px;
+    left: 30%;
+    background-color: rgb(41, 103, 160);
+    border-radius: 20px;
+    padding: 1; /* Increase padding to make the div appear bigger */
+}
+
+.b1, .b2 {
+    height: 50px;
+    width: 300px; /* Adjust the width of the buttons */
+}
+.b1{
+    background-color: #eee; /* Background color changes on hover */
+    color: black; /* Text color changes to black on hover */
+}
+
+

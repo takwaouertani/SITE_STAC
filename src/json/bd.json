@@ -1,0 +1,133 @@
+{
+    "Membre":[
+        {"id":1,"nom_pren":"Ouertani Takwa","image":"assets/img1.jpg","email":"tt.tt@example.com","poste":"Presidente"},
+        {"id":2,"nom_pren":"Ayari Essia","image":"assets/img2.jpg","email":"A_A@example.com","poste":"Presidente"},
+        {"id":3,"nom_pren":"Romdhani Nour","image":"assets/img3.png","email":"N.ro@example.com","poste":"Vice-président"},
+        {"id":4,"nom_pren":"Jbeli Ahmed","image":"assets/img4.png","email":"Ah20@example.com","poste":"responsable marketing"},
+        {"id":5,"nom_pren":"Tounsi Youssef","image":"assets/img5.png","email":"Ah20@example.com","poste":"responsable de communauté"},
+        {"id":6,"nom_pren":"Dridi Emna","image":"assets/img6.png","email":"Ah20@example.com","poste":"assistante ressources humaines"}
+    ],
+
+    "Evenement": [
+        {
+          "id": 1,
+          "image": "https://example.com/image.jpg",
+          "nom": "Nom de l'événement",
+          "lieu": "Lieu de l'événement",
+          "date": "2023-11-08",
+          "description": "Description de l'événement",
+          "partenaire": [
+            {
+              "nom": "Nom du partenaire 1",
+              "logo": "https://example.com/logo-partenaire-1.png"
+            }
+          ],
+          "organisateurs": [
+            {
+              "nom": "Nom de l'organisateur 1",
+              "email": "email-organisateur-1@example.com"
+            },
+            {
+              "nom": "Nom de l'organisateur 2",
+              "email": "email-organisateur-2@example.com"
+            }
+          ]
+        },
+        {
+            "id": 2,
+            "image": "https://example.com/image.jpg",
+            "nom": "Nom de l'événement",
+            "lieu": "Lieu de l'événement",
+            "date": "2023-11-08",
+            "description": "Description de l'événement",
+            "partenaire": [
+              {
+                "nom": "Nom du partenaire 1",
+                "logo": "https://example.com/logo-partenaire-1.png"
+              },
+              {
+                "nom": "Nom du partenaire 2",
+                "logo": "https://example.com/logo-partenaire-2.png"
+              }
+            ],
+            "organisateurs": [
+                {
+                  "nom": "Nom de l'organisateur 1",
+                  "email": "email-organisateur-1@example.com"
+                },
+                {
+                  "nom": "Nom de l'organisateur 2",
+                  "email": "email-organisateur-2@example.com"
+                }
+              ]
+          },
+          {
+            "id": 3,
+            "image": "https://example.com/image.jpg",
+            "nom": "Nom de l'événement",
+            "lieu": "Lieu de l'événement",
+            "date": "2023-11-08",
+            "description": "Description de l'événement",
+            "partenaire": [
+              {
+                "nom": "Nom du partenaire 1",
+                "logo": "https://example.com/logo-partenaire-1.png"
+              },
+              {
+                "nom": "Nom du partenaire 2",
+                "logo": "https://example.com/logo-partenaire-2.png"
+              }
+            ],
+            "organisateurs": [
+                {
+                  "nom": "Nom de l'organisateur 1",
+                  "email": "email-organisateur-1@example.com"
+                },
+                {
+                  "nom": "Nom de l'organisateur 2",
+                  "email": "email-organisateur-2@example.com"
+                }
+              ]
+          }
+      ],
+      "EventSchedule":[
+        {
+          "day":"Friday",
+         
+          "nom":"Met gala",
+          "date":"2023-11-17",
+          "image":"assets/img1.png"
+        },
+        {
+          "day":"Saturday",
+        
+
+          "nom":"Met gala",
+          "date":"2023-11-17",
+          "image":"assets/img1.png"},
+        {
+          "day":"Sunday",
+          "nom":"Met gala",
+          "date":"2023-11-17",
+          "image":"assets/img1.png"
+          }
+        
+
+      ],
+      
+      
+        "gallery": [
+          { "image": "assets/ev1.jpg", "title":"Camping","desc":"14-05-2023","size": "small"  },
+          { "image": "assets/ev2.jpg",  "title":"Camping","desc":"14-05-2023","size": "medium" },
+          { "image": "assets/ev9.jpg",  "title":"Camping","desc":"14-05-2023","size": "small" },
+          { "image": "assets/ev4.jpg",  "title":"Camping","desc":"14-05-2023","size": "medium" },
+          { "image": "assets/ev5.jpg",  "title":"Camping","desc":"14-05-2023","size": "small"},
+          { "image": "assets/ev6.jpg",  "title":"Camping","desc":"14-05-2023" ,"size": "medium"},
+          { "image": "assets/ev77.jpg",  "title":"Camping","desc":"14-05-2023" ,"size": "small"},
+          { "image": "assets/ev8.jpg",  "title":"Camping","desc":"14-05-2023" ,"size": "medium"}
+        ]
+      }
+      
+      
+      
+    

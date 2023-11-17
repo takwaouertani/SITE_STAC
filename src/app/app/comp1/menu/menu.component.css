@@ -1,0 +1,165 @@
+/* les dimentions de l'image */
+img {
+    height: 130px;
+    width: 130px;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+nav{
+    position: absolute;
+    padding: 10px 20px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; 
+    align-items: center;
+    background-color: black;
+}
+section{
+    background-image: url(src\assets\img3.jpg);
+    background-size: cover;
+
+}
+header{
+   
+    height: 100vh;
+    width: 100vw;
+}
+a{
+    color: white;
+    
+}
+ul{
+    display: flex;
+
+}
+ul li{
+    margin-left: 20px;
+}
+ul li a{
+text-decoration: none;
+ padding:6px 15px ;
+     color: white(17, 16, 16);
+    border-radius:20px ;
+}
+ul li a:hover,
+ul li a:active{
+background-color: #fff;
+color: #2b1055;
+}
+img{
+height: 100px;
+width: 100px;
+}
+
+
+.minimenu{
+display: none;
+position: absolute;
+top: 35px;
+right: 50px;
+width: 100px;
+
+}
+
+
+@media screen and (max-width:900px){
+nav{
+padding: 0;
+}
+.minimenu{
+display: block;
+}
+.links{
+top: 0;
+left: 0;
+position: absolute;
+display: flex;
+flex-direction: column;
+background-color: rgba(191, 181, 181, 0.205);
+backdrop-filter: blur(8px);
+width: 100%;
+height: 100vh;
+justify-content: center;
+align-items: center;
+margin-left: -100%;
+transition: all 0.5s ease;
+
+}
+.links.mobile-menu{
+margin-left: 0;
+
+}
+.logo{
+display: none;
+
+
+}
+ul li{
+margin: 15px 0;
+font-size: 1.2em;
+}
+}
+
+.navbar{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+}
+
+.logo{
+  margin: 0 300px;
+  height: 75px;
+  width: 75px;
+
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+
+
+  .search-box {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5%;
+    height: 50px;
+    border-radius: 24px;   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  
+  .search-box input {
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    width: 0;
+    transition: 0.8s;
+  }
+  .search-box:hover input{
+    width: 200px;
+  }
+  
+  .search-box button {
+    padding: 10px;
+    border: 0;
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }

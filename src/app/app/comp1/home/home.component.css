@@ -1,0 +1,206 @@
+
+
+/* pour la 1er partie de home*/
+
+.image1 {
+  background-image: url("src/assets/img3.jpg");
+  background-size: cover;
+  height: 750px;
+  background-position: center;
+  top: 0;
+  left: 0;
+}
+.image1  h1{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  top: 20%;
+  left: 30%;
+  position: absolute;
+}
+.image1 h4{
+  position: absolute;
+  top: 80%;
+  right: 10%;
+  transform: translate(50%,50%);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.count{
+  position: absolute;
+  top: 90%;
+  right: 15%;
+  transform: translate(50%,50%);
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+/* pour la 2eme partie de home pour about us*/
+.image2{
+
+  background-image: url("src/assets/img5.jpeg");
+  background-size: cover;
+  height: 750px;
+  background-position: center;
+  top: 751px;
+  left: 0;
+  
+}
+.image2 h2{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  top: 850px;
+  left: 30px;
+  position: absolute;
+}
+
+.image2 p{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 1000px;
+  left: 30px;
+  background-color: rgba(0, 0, 0, 0.06); /* Add a semi-transparent background */
+  padding: 10px; /* Add some padding for spacing */
+  width: 500px; /* Set a specific width for the box */
+  box-sizing: border-box; /* Include padding in the width calculation */
+
+}
+.b1{
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+
+  }
+  
+  
+  .neon-background-button{
+    box-shadow: none;
+    transform: translate(-80%,350%);
+
+    
+  }
+  .b1:hover {
+    
+    box-shadow: 0 0 10px #2332ff, 0 0 20px #ff00a6;
+  }
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-img img {
+  width: 35vw;
+  border-radius: 15%;
+}
+
+.neon-background {
+  box-shadow: 0 0 10px #2332ff, 0 0 20px #ff00a6;
+  border-radius: 15%;
+  transform: translateX(50%);
+
+}
+
+/*pour le 3eme partie de home pour le schedule des evenements*/
+
+.image3{
+  background-image: url("src/assets/img6.jpeg");
+  background-size: cover;
+  height: 750px;
+  background-position: center;
+  top: 800px;
+  left: 0;
+  
+}
+.image3 h1{
+  position: absolute;
+  top: 220%;
+  left: 45%;
+  color: aliceblue;
+  letter-spacing: 0.1rem;
+
+  font-weight: 600;
+}
+/*pour le 4eme partie de home pour la gallery des evenements*/
+
+.image4{
+  background-image: url("src/assets/img8.jpeg");
+  background-size: cover;
+  height: 750px;
+  background-position: center;
+  top: 801px;
+  left: 0;
+  
+}
+.image4 h1{
+  position: absolute;
+  top: 330%;
+  left: 45%;
+  color: aliceblue;
+  letter-spacing: 0.1rem;
+
+  font-weight: 600;
+}
+/* Pour la galerie */
+.bannerImage:hover {
+  filter: grayscale(100%);
+  opacity: 0.3;
+  transform: scale(1.2, 1.2);
+}
+
+.bannerTxt {
+  opacity: 1;
+  position: absolute;
+  color: white;
+  display: none;
+  margin-top: 75px;
+  margin-left: 25px;
+  z-index: 99;
+
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  p.desc {
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100px;
+  }
+}
+/*for gallery*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallery{
+  background-color: black;
+}
+.image {
+  width: 300px; /* Ajustez la largeur comme nécessaire */
+  height: 300px; /* Ajustez la hauteur comme nécessaire */
+  margin: 10px; /* Marge entre les images */
+  margin: 5px; /* Réduisez la marge entre les images à 5 pixels */
+
+  object-fit: cover; /* Ajustez le comportement de l'objet pour remplir le conteneur */
+  border-radius: 10px; /* Ajoutez des coins arrondis de 10 pixels */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre douce */
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 100%; /* Ajustez la largeur à 100% pour les écrans plus petits */
+    height: auto; /* Assurez-vous que la hauteur s'ajuste automatiquement */
+    margin: 5px; /* Réduisez la marge entre les images à 5 pixels */
+  }
+}

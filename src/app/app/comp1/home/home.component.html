@@ -1,0 +1,41 @@
+<div class="image1" >
+    <br>     <br>     <br><br>     <br>        <br>     <br>
+
+
+    <h1>STAC THE FUN IN EVERY EVENT</h1>
+    <h4>Coming soon</h4>
+    <div id="demo" class="count"></div>
+
+</div>
+<section class="about image2">
+    <div class="about-content">
+      <h2 >About Us</h2>
+      <p>STAC Club d'Événements de notre institution! Nous sommes passionnés par l'organisation d'événements mémorables et engageants pour la communauté étudiante.<br><br>
+        Notre club est bien plus qu'une simple plateforme d'organisation d'événements. C'est un lieu où les idées créatives prennent vie et où les étudiants peuvent se réunir pour partager leur enthousiasme pour des activités divertissantes et éducatives.</p><br/>
+      <button type="button" class=" neon-background-button b1">Read More</button>
+    </div>
+    <div class="about-img neon-background">
+      <img src="assets/img4.jpg" >
+    </div>
+  </section >
+<section class="image3">
+<h1 >Event Schedule</h1>
+</section>
+<section class="gallery">
+  <h1>Gallery</h1>
+  <div ng-app="" class="container">
+    <div *ngFor="let item of lesimages" class="image-container">
+      <img  class=" img-fluid image" [src]="item.image"  [ngClass]="item.size" />
+      <div   *ngIf="showItem === item">>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.desc }}</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+</section>
+
+<app-contact></app-contact>
