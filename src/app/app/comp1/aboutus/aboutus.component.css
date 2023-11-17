@@ -2,54 +2,112 @@
       * {
         box-sizing: border-box;
       }
-      
       body {
-        margin: 0;
-        font-family: Arial;
+        min-height: 100vh;
       }
-      
-      .header {
-        text-align: center;
-        padding: 32px;
-      }
-      
-      .row {
-        display: -ms-flexbox; /* IE10 */
+      .container .row .col-lg-4 {
         display: flex;
-        -ms-flex-wrap: wrap; /* IE10 */
-        flex-wrap: wrap;
-        padding: 0 4px;
+        justify-content: center;
       }
-      
-      /* Create four equal columns that sits next to each other */
-      .column {
-        -ms-flex: 25%; /* IE10 */
-        flex: 25%;
-        max-width: 25%;
-        padding: 0 4px;
+      .card {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 280px;
+        max-height: 340px;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       }
-      
-      .column img {
-        margin-top: 8px;
-        vertical-align: middle;
+      .card .card-image {
         width: 100%;
+        max-height: 340px;
       }
-      
-      /* Responsive layout - makes a two column-layout instead of four columns */
-      @media screen and (max-width: 800px) {
-        .column {
-          -ms-flex: 50%;
-          flex: 50%;
-          max-width: 50%;
+      .card .card-image img {
+        width: 100%;
+        max-height: 340px;
+        background-size: cover;
+        overflow: hidden;
+        border-radius: 20px;
+      }
+      .card .card-content {
+        position: absolute;
+        bottom: -180px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        min-height: 140px;
+        width: 100%;
+        transition: bottom .4s ease-in;
+        box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      /* Add this at the end of your existing styles */
+      .card {
+        margin: 15px; /* Add margin to create space around each div */
+      }
+      .card .card-image img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        object-fit: cover; /* Ensure the image covers the entire space without stretching */
+      }
+      .card .card-content {
+        position: absolute;
+        bottom: -180px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        min-height: 140px;
+        width: 100%;
+        transition: bottom .4s ease-in;
+        box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+      @media(max-width: 991.5px) {
+        .container {
+          margin-top: 20px;
+        }
+        .container .row .col-lg-4 {
+          margin: 20px 10px; /* Add margin around each column */
         }
       }
-      
-      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-      @media screen and (max-width: 600px) {
-        .column {
-          -ms-flex: 100%;
-          flex: 100%;
-          max-width: 100%;
-        }
+      /* Add this at the end of your existing styles */
+      .text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px; /* Adjust padding as needed */
+        box-sizing: border-box;
       }
-   /* Votre fichier CSS Angular (styles.css par exemple) */
+      .text h4,
+      .text h5 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #fff; /* Adjust text color */
+      }
+      .text h5 {
+        font-size: 0.8rem;
+        font-weight: 200;
+        color: #fff; /* Adjust text color */
+      }
+      .card .text .social-icons {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      .card .text .social-icons a {
+        color: #fff;
+        margin: 0 8px;
+        text-decoration: none;
+        font-size: 15px;
+      }
+      .card .text .social-icons i {
+        transition: color 0.3s ease;
+      }
+      .card .text .social-icons a:hover i {
+        color: #3b5998; /* Facebook blue color */
+      }

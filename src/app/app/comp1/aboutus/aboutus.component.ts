@@ -11,10 +11,9 @@ import { Gallery } from '../../classes/gallery';
 export class AboutusComponent  implements OnInit{
   text: boolean = false;
 
-
   lesimages: Gallery[] = [];
+  lesmembres: Members[] = [];
 
-  lesmembres:Members[]=[];
   constructor(private membreservice:MembersService){}
     ngOnInit(): void {
      this.membreservice.getMembres().subscribe(

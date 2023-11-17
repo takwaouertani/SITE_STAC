@@ -1,78 +1,57 @@
+
+<!--For the MEET OUR MEMEBERS-->
 <div class="container">
     <div class="row">
         <div class="col-md-8 mx-auto text-center">
             <div class="jumbotron mt-4">
                 <img g="assets/img.png" class="header-img img-fluid my-4">
-                <h1 class="display-4">STAC the Fun in Every Event </h1>
-                <hr class="my-4">
+                <h1 class="display-4">MEET OUR MEMBERS! </h1>
+               <hr class="my-4">
            </div>
         </div>
     </div>
-    
-
- <!-- <section class="section bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6" *ngFor="let m of lesmembres">
-              <div class="card mb-4" style="background-color: black;">
-                <div class="card-body text-white">
-                  <div class="d-flex align-items-center mb-3">
-                    <img [src]="m.image" class="rounded-circle " alt="Artwork"
-                    class="rounded-circle img-fluid" style="width: 100px; height: 100px;">
-                    <div>
-                      <h5 class="card-title">{{ m.nom_pren }}</h5>
-                      <p class="card-text">{{ m.poste }}</p>
-                    </div>
-                  </div>
-                </div>
+  </div>
+  <!--Pour les divs des membres -->
+     <!--
+<section class="section bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" *ngFor="let m of lesmembres">
+        <div class="card mb-4" style="background-color: black;">
+          <div class="card-body text-white">
+            <div class="d-flex align-items-center mb-3">
+              <img [src]="m.image" class="rounded-circle img-fluid" alt="Artwork" style="width: 100px; height: 100px;">
+              <div>
+                <h5 class="card-title">{{ m.nom_pren }}</h5>
+                <p class="card-text">{{ m.poste }}</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="assets/ev1.jpg" style="width:100%">
-        <img src="assets/ev2.jpg" style="width:100%">
-        <img src="assets/ev3.jpg" style="width:100%">
-        <img src="assets/ev4.jpg" style="width:100%">
-        <img src="assets/ev5.jpg" style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-
-      </div>
-      <div class="column">
-        <img src="assets/ev2.jpg" style="width:100%" >
-        <img src="assets/ev3.jpg" style="width:100%">
-        <img src="assets/ev4.jpg" style="width:100%">
-        <img src="assets/ev5.jpg" style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-
-      </div>
-      <div class="column">
-        <img src="assets/ev2.jpg" style="width:100%">
-        <img src="assets/ev3.jpg" style="width:100%">
-        <img src="assets/ev4.jpg" style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-
-      </div>
-      <div class="column">
-        <img src="assets/ev3.jpg"  style="width:100%">
-        <img src="assets/ev4.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-        <img src="assets/ev6.jpg"  style="width:100%">
-        <img src="assets/ev1.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-        <img src="assets/ev5.jpg"  style="width:100%">
-
+          </div>
+            </div>
+  </div>
+</section>-->
+<section>
+  <div class="container">
+    <div class="row" (mouseover)="showDetails()" (mouseout)="hideDetails()">
+      <div class="col-lg-4" *ngFor="let member of lesmembres" >
+        <div class="card p-0">
+          <div class="card-image">
+            <img [src]="member.image" alt="{{ member.nom_pren }}">
+            <div class="text" >
+              <h4 class="pt-2">{{ member.nom_pren }}</h4>
+              <h5>{{ member.poste }}</h5>
+              <div class="social-icons">
+                <a href="{{ member.facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="{{ member.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:{{ member.email }}"><i class="far fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
- -->
-
+  </div>
+</section>
 

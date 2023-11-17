@@ -5,5 +5,7 @@ export class Members {
         public image:string,
         public email:string,
         public poste:string,
+        public facebook:string,
+        public instagram:string,
     ){}
 }
