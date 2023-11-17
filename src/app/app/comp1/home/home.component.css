@@ -1,5 +1,6 @@
-
-
+.body{
+  background-color: #000;
+}
 /* pour la 1er partie de home*/
 
 .image1 {
@@ -204,3 +205,62 @@
     margin: 5px; /* Réduisez la marge entre les images à 5 pixels */
   }
 }
+
+
+.row {
+  display: flex;
+  justify-content: space-between ; /* Cela répartit l'espace disponible entre les éléments */
+  margin: 10px;
+  background-color: black;
+}
+
+.event {
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(36, 35, 35);
+  padding: 10px; /* Réduction de la taille du padding */
+  margin: 10px;
+  width: 48%;
+}
+.event h3 {
+  color: white;
+  font-size: 20px; /* Personnalisez la taille de la police selon vos préférences */
+  margin-bottom: 10px; /* Ajout d'une marge en bas pour l'espace */
+  text-align: center;
+}
+
+/* Style pour le paragraphe p à l'intérieur de .event */
+.event p {
+  color: #cccccc; /* Couleur de texte gris clair */
+  font-size: 16px; /* Personnalisez la taille de la police selon vos préférences */
+  line-height: 1.5; /* Espacement des lignes pour une meilleure lisibilité */
+  
+}
+
+h3 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Change la direction en colonne pour les écrans plus petits */
+    align-items: center; /* Centre les éléments dans la colonne */
+  }
+
+  .event {
+    width: 100%; /* Prend la largeur totale de l'écran */
+    margin-bottom: 15px; /* Ajoute un peu d'espace entre les éléments empilés */
+  }
+}
+/*botton*/
+.btn {
+  padding: 12px 20px;
+  border-radius: 5; }
+  .btn.btn-primary {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid transparent; }
+    
